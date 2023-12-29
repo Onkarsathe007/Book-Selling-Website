@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+    <title>Document</title>
+
+    
+</head>
+
+<body>
+
+    <nav class="navcontaner">
+        <div class="logomain1">
+           <div class="logo"> <img src="8.png" alt="log"> </div>
+           <div class="webname">
+              <h1>Book Town</h1>
+           </div>
+        </div>
+        <div class="lonhinbtn">
+           <a href="login1.html">
+              <button>
+                 Login
+              </button>
+           </a>
+        </div>
+  
+     </nav>
+    <!--navigation bar-->
+
+    <nav class="navbar background hnav-resp background2">
+        <ul class="nav-list v-class-resp">
+          
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="produts.html"> PRODUCT</a></li>
+            <li><a href="http://127.0.0.1:5500/contactus.html"> CONTACT US</a></li>
+            <li><a href="#aboutus"> ABOUT US</a></li>
+            <li><a href="#requirement">REQUIREMENT BOX</a></li>
+
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" class="serch" id="search">
+            <button class="btn sm-btn">search</button>
+
+        </div>
+
+           
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+     </div>
+     
+    </nav>
+    <!--About-->
+    <div class="ab" id="aboutus">
+        <h6>About Us</h6>
+    </div>
+
+    <div class="aboutmain">
+        <div class="abiutsubmain abiutsubmain1">
+            <div class="absub2">
+               <p class="aboutpara1">
+                    hii!! Welcome to book town. hear we
+                    provide all type of book,we provide a
+                    requirement box, you can drop thear,A book
+                    name wich you want then we provide that book for you.
+                    our main baranch is in narayandoh A/P darewadi,a.nagar,maharastra pin-414601
+
+                </p>
+
+            </div>
+
+            <div class="imgutab">
+                <img src="14.jpg" alt="logo">
+            </div>
+
+        </div>
+
+
+        <div class="abiutsubmain2 abiutsubmain aboutsubmainph ">
+
+            <div class="imgutab imgutab2">
+                <img src="13.jpg" alt="logo">
+            </div>
+            <p class="aboutpara2">
+                BookTown works to find best book from trustable website
+                ‍We believe book are like our frend. They help to give
+                solutation of our problem.
+
+                Every purchase on the site financially
+                supports independent bookstores. Our platform gives
+                independent bookstores tools to compete online and financial support
+                to help them maintain their presence in local communities.
+            </p>
+            
+        </div>
+
+    </div>
+
+    <!-- validation requirement box  -->
+    <script>
+        function req(){
+            var a = document.getElementById("requirementphone").value;
+            if(a.length>10)
+            {
+                document.getElementById("massage1").innerHTML="mobile number must be 10 digit" ;
+                return false;
+            }
+            if(a.length>10)
+            {
+                document.getElementById("massage1").innerHTML="mobile number must be 10 digit" ;
+                return false;
+            }
+        }
+</script>
+
+    <!--requirement box  -->
+    <div class="requirementbackground" id="requirement">
+        <h6> Requirement Box</h6>
+        <p>Hear you can submit your requirement and we provide that Book for you!!</p>
+
+        <form id="requirement" action="" onsubmit="return req()">
+            <div class="requirementinput">
+                <input type="text" id="requirementname" placeholder="Your name" required>
+
+                <input type="number" id="requirementphone" placeholder="Whatsapp number"value="" required>
+                <span id="massage1" style="color:red"> </span>
+
+                <input type="email" id="requirementemail" placeholder="E-mail" required>
+                <input type="text" id="requirementbookname" placeholder="required Book name" required>
+                <div class="requirementbtn">
+                <input type="submit" id="requirementbook" value="submit" >
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="fmain fmain2">
+           <div class="fabout fabout2">
+              <h3>About Us</h3>
+              <p>hii!! Welcome to book town. hear we provide all type
+                 of book,we provide a requirement box, you can drop thear,
+                 A book name wich you want then we provide that book for you.
+                 our main baranch is in narayandoh A/P darewadi,a.nagar,
+                 maharastra pin-414601
+              </p>
+           </div>
+           <!--end-->
+           <div class="aboutflex">
+              
+              <div class="flink">
+                 <h3>Links</h3>
+                 <ul class="flinkul">
+                    <li><a href="#home">→HOME</a></li>
+                    <li><a href="produts.html">→ PRODUCT</a></li>
+                    <li><a href="#contact1">→ CONTACT US</a></li>
+                    <li><a href="about.html">→ ABOUT US</a></li>
+                    <li><a href="file:///C:/Users/kartikey/Documents/HTML4/about.html#requirement">
+                          →REQUIREMENT BOX</a></li>
+                 </ul>
+              </div>
+              <!--end-->
+
+              <div class="Help">
+                 <h3>Help</h3>
+                 <ul class="helplink">
+                    <li><a href="#contact1"> →CONTACT US</a></li>
+                    <li><a href="kartikeyvirkar@gmail.com"> →E-mail</a></li>
+                 </ul>
+              </div>
+           </div>
+           <!--end-->
+        </div>
+
+     </footer>
+    <script src="resp.js"></script>
+</body>
+
+</html>
